@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_borrower"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.flag.pl1.Borrower"
+    android:orientation="vertical"
+    android:background="#ffffcc"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        app:srcCompat="@drawable/user"
+        android:id="@+id/imageView13"
+        android:scaleType="fitXY"
+        android:layout_width="147sp"
+        android:layout_height="147sp"
+        android:contentDescription="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="Name : Gu Yuankun"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userID"
+        android:text="Student ID : 20152480"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/college"
+        android:text="@string/college_hong_shen"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/major"
+        android:text="Major : Computer science"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrowing"
+        android:text="Borrowing : 2"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrowed"
+        android:text="Borrowed : 11"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

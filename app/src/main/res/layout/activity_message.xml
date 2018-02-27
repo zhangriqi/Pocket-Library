@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.flag.pl1.Message"
+    android:orientation="vertical"
+    android:background="#ffffcc">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffe6"
+        android:onClick="chat">
+
+        <ImageView
+            app:srcCompat="@drawable/user"
+            android:id="@+id/imageView14"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_width="120sp"
+            android:layout_height="60sp"
+            android:contentDescription="" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:text="@string/read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state1"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:paddingTop="5sp" />
+
+            <TextView
+                android:text="@string/zhang_ruiqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chater1"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:paddingTop="5sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffe6"
+        android:layout_marginTop="10sp"
+        android:onClick="chat">
+
+        <ImageView
+            app:srcCompat="@drawable/user"
+            android:id="@+id/imageView17"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_width="120sp"
+            android:layout_height="60sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:text="@string/unread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state2"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:paddingTop="5sp" />
+
+            <TextView
+                android:text="@string/yang_xiaoxiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chater2"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:paddingTop="5sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_center_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.flag.pl1.CenterPage"
+    android:background="#ffffcc">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            android:id="@+id/imageView4"
+            android:layout_weight="5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1"
+            android:hint="@string/book_searching"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:maxLines="1"
+            android:onClick="toBookSearching" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300sp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp">
+
+        <ImageView
+            app:srcCompat="@drawable/reminder"
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            android:layout_width="110sp"
+            android:elevation="1dp"
+            android:layout_height="130sp"
+            android:onClick="reminder" />
+
+        <ImageView
+            android:layout_width="110sp"
+            app:srcCompat="@drawable/my_books"
+            android:id="@+id/imageView5"
+            android:scaleType="fitXY"
+            android:layout_height="130sp" />
+
+        <ImageView
+            android:layout_width="110sp"
+            app:srcCompat="@drawable/activities"
+            android:id="@+id/imageView6"
+            android:scaleType="fitXY"
+            android:layout_height="130sp"
+            android:onClick="activities" />
+    </LinearLayout>
+</RelativeLayout>
