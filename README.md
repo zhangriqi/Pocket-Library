@@ -1,7 +1,6 @@
 # Pocket-Library
-An Android app developed by our team
 
-This is designed to be an application that runs on Android (above 4.0)
+This is an android app designed to run on Android (API 4.0 and above)
 
 Features:
   1)It allows users to check their inforamtion related to the school library.
